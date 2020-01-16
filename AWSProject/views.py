@@ -1,4 +1,7 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+
+import json
 
 def index(request):
-    return HttpResponse("Hello ! Django Application is running successfully.")
+    return render(request, "hello.html", )
